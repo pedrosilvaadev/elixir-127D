@@ -31,7 +31,7 @@ export function Sidebar() {
       )}
 
       <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-neutral-900 text-white transition-transform duration-200 md:static md:z-auto md:w-56 md:translate-x-0 h-screen ${
+        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-neutral-900 text-white transition-transform duration-200 md:static md:z-auto md:w-56 md:translate-x-0 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -46,7 +46,7 @@ export function Sidebar() {
             <X className="h-5 w-5" />
           </button>
         </div>
-        <nav className="flex flex-1 flex-col gap-0.5 px-3">
+        <nav className="flex flex-col gap-0.5 px-3">
           <NavLink
             to="/"
             onClick={closeDrawer}
@@ -62,7 +62,7 @@ export function Sidebar() {
             Início
           </NavLink>
         </nav>
-        <div className="mt-auto border-t border-neutral-800 p-3">
+        <div className="p-3">
           <button
             type="button"
             className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-neutral-400 hover:bg-neutral-800 hover:text-white"
