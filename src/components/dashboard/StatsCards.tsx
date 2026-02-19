@@ -6,7 +6,6 @@ import { Flame, Target, Calendar, Briefcase } from 'lucide-react'
 
 export function StatsCards() {
   const profile = useStore((s) => s.profile)
-  const progressByDate = useStore((s) => s.progressByDate)
 
   if (!profile) return null
 
